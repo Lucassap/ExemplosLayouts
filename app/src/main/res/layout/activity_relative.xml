@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeActivity">
+
+    <Button
+        android:id="@+id/bntTeste1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Teste01"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/bntTeste2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Teste 02"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@id/bntTeste1"
+        android:layout_below="@id/bntTeste1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/paodequeijo"
+        android:layout_below="@id/bntTeste2"
+        />
+
+</RelativeLayout>
